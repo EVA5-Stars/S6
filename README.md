@@ -24,8 +24,8 @@ The code is implemented in a highly modularized way and a single function was us
 
 Following are the accuracy observed in the last Epoch:
 
-with L1 + BN => 99.29%
-with L2 + BN => 99.35%
-with L1 and L2 with BN => 99.47%
-with GBN => 99.31%
-with L1 and L2 with GBN => 99.35%
+- with L1 + BN => 99.29%
+- with L2 + BN => 99.35%
+- with L1 and L2 with BN => 99.47%
+- with GBN => 99.31%
+- with L1 and L2 with GBN => 99.35%

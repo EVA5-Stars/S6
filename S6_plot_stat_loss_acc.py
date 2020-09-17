@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 def plot_stat(stat_list, msg):
     plt.figure(figsize=(20,12))
     plt.plot(stat_list[0],color='Magenta',   label='With L1+BN')

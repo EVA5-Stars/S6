@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def misclassified_image_finder(model, model_path, device, train_loader, image_num, msg):
     
     data_iter = iter(test_loader)

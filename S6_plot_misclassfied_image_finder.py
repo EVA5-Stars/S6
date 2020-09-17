@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import torch
 from torch.optim.lr_scheduler import StepLR
 import torch.optim as optim
 from S6.S6_data_loader import init_train_test_loader

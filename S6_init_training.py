@@ -1,12 +1,14 @@
 from torch.optim.lr_scheduler import StepLR
 import torch.optim as optim
-from S6.S6_train_test_function import train
-from S6.S6_train_test_function import test
+
 from S6.S6_data_loader import init_train_test_loader
 from torch.optim.lr_scheduler import StepLR
 
 
 train_loader, test_loader = init_train_test_loader()
+
+from S6.S6_train_test_function import train
+from S6.S6_train_test_function import test
 
 def init_training(model, device, train_loader, epochs, step_lr=True, l1_lambda=None, l2_en=False):
 

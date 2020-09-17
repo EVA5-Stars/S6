@@ -17,11 +17,15 @@ def misclassified_image_finder(model, model_path, device, train_loader, image_nu
    
     for _i in range(image_num):
           data, target = data_iter.next()
+
           model.load_state_dict(torch.load(model_path)) 
           model.eval()
+
           data, target = data.to(device), target.to(device)
+
           output = model(data)
           pred = output.argmax(dim=1, keepdim=True) 
+
           for a in range(256):
               if(pred[a]!=target[a]):
                   
